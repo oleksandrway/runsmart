@@ -1,0 +1,153 @@
+.catalog
+    padding: 80px 0 100px 0
+    &__tabs 
+        margin-top: 70px
+        list-style-type: none
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 0
+        padding-left: 0
+        flex-wrap: wrap
+    &__tab  
+        width: 220px
+        height: 50px
+        border: 2px solid #d0d0d0
+        font-family: MuseoSansCyrl
+        font-size: 18px
+        line-height: 1.2
+        font-weight: 500
+        text-transform: uppercase
+        color: #6b6b6b
+        text-align: center
+        line-height: 48px
+        transform:  skew(-25deg)
+        margin:  5px 
+        transition: .5s all
+        cursor: pointer
+        &:hover
+            box-shadow: 3px 3px 10px
+        div
+            transform:  skew(25deg)
+
+        &_active
+                color: #fff
+                background-color: $main-color
+    &__content 
+        margin-top: 50px   
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        display: none
+        &_active
+            display: flex
+            
+
+    &-item 
+        width: 300px
+        min-height: 440px
+        border: 2px solid #e8e8e8
+        padding: 20px 20px 26px 20px
+        text-align: center
+        overflow: hidden
+        margin-bottom: 20px
+        &__img
+            display: block
+            margin: 0 auto
+            max-width: 100%
+            height: 200px
+        &__subtitle
+            margin-top: 16px
+            font-family: MuseoSansCyrl
+            font-size: 16px
+            line-height: 1.2
+            font-weight: 900
+        &__descr
+            margin-top: 10px
+            font-family: MuseoSansCyrl
+            font-size: 14px
+            font-weight: 500
+        &__link
+            display: block
+            margin-top: 10px
+            font-family: MuseoSansCyrl
+            font-size: 14px
+            line-height: 1.2
+            font-weight: 500
+            text-decoration: underline
+            color: #c70101
+        hr
+            border-bottom:  none
+            margin-top: 19px
+            background-color: #e8e8e8
+        &__footer
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__prices
+            text-align: start
+        &__old-price
+            font-family: MuseoSansCyrl
+            font-size: 14px
+            font-weight: 300
+            color: #555555
+            text-decoration: line-through
+        &__price
+            font-family: MuseoSansCyrl
+            font-size: 20px
+            font-weight: 700
+        &__wrapper 
+            display: flex
+            width: calc(200% + 40px)
+            position: relative
+
+        &__content
+            width: 50%
+            margin-right: 0px
+            transform: translateX(-100%)
+            transition: 0.5s all
+            &_active
+                transform: translateX(0%)
+                margin-right: 20px
+        &__list
+            position: relative
+            width: 50%
+            margin-left: 20px
+            transform: translateX(0%)
+            padding-right: 20px
+            transition: 0.5s all
+            padding-left: 19px
+            margin-bottom: 0
+            list-style-type: none
+            text-align: left
+            
+            &_active
+                transform: translateX(-100%)
+                margin-left: 0px
+            li
+                position: relative
+                font-family: MuseoSansCyrl
+                font-size: 14px
+                line-height: 1.2
+                margin-bottom: 25px
+                &::before
+                    content: ''
+                    position: absolute
+                    left: -19px
+                    top: 6px
+                    height: 5px
+                    width: 5px
+                    background-color: $main-color
+                    
+       
+        &__back
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(calc( -50% - 19px ))
+            display: block
+            color: $main-color
+            font-size: 18px
+            font-family: MuseoSansCyrl
+            font-weight: 500
+            text-decoration: underline
