@@ -1,0 +1,45 @@
+.overlay
+    display: none
+    position: fixed
+    width: 100vw
+    height: 100vh
+    top: 0
+    background-color: rgba(0,0,0, .56)
+
+.modal1
+    width: 380px
+    background-color: #f2f2f2
+    padding: 40px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    min-height: 400px
+
+    &__close
+        position: absolute
+        top: -20px
+        right: -52px
+        color: $main-color
+        font-size: 51px
+        line-height: 51px
+        cursor: pointer
+    &__subtitle
+        font-family: MuseoSansCyrl
+        font-size: 18px
+        line-height: 1.2
+        font-weight: 700
+        text-align: center
+        margin-bottom: 11px
+    &__descr
+        font-family: MuseoSansCyrl
+        font-size: 14px
+        line-height: 1.2
+        text-align: center
+    &_mini
+        min-height: 140px
+
+
+
+#consultation, #order, #thanks
+    display: none
